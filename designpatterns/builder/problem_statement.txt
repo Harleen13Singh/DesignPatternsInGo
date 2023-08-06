@@ -1,0 +1,2 @@
+Problem statement:
+Build a bike shop simulator, where client will ask for a particular bike, and the creation should be abstracted from the client
