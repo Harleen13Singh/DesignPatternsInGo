@@ -1,0 +1,9 @@
+Problem statement: Create a data base connection and use the same for each service. Any changes for the connection of serviceA should not effect the connection serviceB
+
+Brute-Force1: 
+1. everytime make network call for the data base connection for each service
+
+Optimised-approadh:
+1. only one time, make the call, now write a function over that connection that will create a deep copy and return. -> This is the prototype pattern
+
+
