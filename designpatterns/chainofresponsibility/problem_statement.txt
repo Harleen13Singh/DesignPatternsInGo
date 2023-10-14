@@ -1,0 +1,31 @@
+Problem statement:
+Chain of responsibility is used when we a request and there are multiple handlers for the same request.
+
+The request can be handled by a single handler or multiple also.
+
+The concrete handler can also update the request, or do something so that the next handler can easily process the same
+
+also, a concrete handler, on run time decide to which next handler it has to send the request.
+
+Let's try to build the decision engine using the CoR pattern.
+
+Problem statement: we have an user id with us, and the user has applied for a credit card. we have multiple vendors for the credit card. we have to check which is the best vendor for the user.
+
+each vendor has its own rules.
+
+vendor_sir_bank: 1. User age > 23
+                 2. User income > 10000k
+                 3. No rule if User has some special 
+                 characterstics
+                 4. Bank api is up
+
+vendor_hdfc: 1. User age > 20
+             2. User income > 10000k
+             3. Bank api is up
+
+vendor_swiss_bank: 1. User age > 30
+                   2. Use income > 2222k
+                   3. Bank api is up
+
+
+Let's create a similar problem statement as the decision engine and solve it using both CoR and Rule engine pattern

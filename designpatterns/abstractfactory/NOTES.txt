@@ -1,0 +1,11 @@
+Difference in factory and abstract factory?
+
+=> Both are creational design patterns and hence responsibity of both is to create objects and hide all the logic. But the basis difference is factory creates an object and abstract factory creates family of objects
+
+In sports factory, we have to create sports products which is a family consisting of bat and gloves. 
+Now bat has it's own concrete impl i.e. cricket bat, baseball bat and same goes for the gloves, but we have to club the concrete impl into one family that is why we need 1 more layer of factory here. 
+Let's say we want to have further classification of cricket sports products, i.e. adidas cricket products and nike cricket products, then we can introduce 1 more layer of factory here.
+
+In Book factory, we have to create book which has its concrete impl i.e. novel and intellectual book. 
+
+In the v2 version of the problem, have divide the cricket factory to multiple factories i.e. cricket factory and nike factory

@@ -8,7 +8,7 @@ type Gloves interface {
 	GetGlovesType() string
 }
 
-// this is the final thing that the product needs, since they need in them in a group
+// this is the final thing that the client needs, since they need in them in a group
 // so added them in a struct
 type SportsProducts struct{
   Bat Bat

@@ -1,16 +1,59 @@
 package abstractfactory
 
-type CricketBat struct{}
-func NewCricketBat() *CricketBat{
-  return &CricketBat{}
+type AdidasCricketFactory struct {
+  gloves *AdidasCricketGloves
+  bat *AdidasCricketBat
 }
-type CricketGloves struct{}
-func NewCricketGloves() *CricketGloves{
-  return &CricketGloves{}
+
+func NewAdidasCricketFactory( gloves *AdidasCricketGloves, bat *AdidasCricketBat) *AdidasCricketFactory{
+  return &AdidasCricketFactory{
+    gloves: gloves,
+    bat: bat,
+  }
 }
-func (c *CricketBat) GetBatType() string {
-	return "cricket_bat"
+
+type NikeCricketFactory struct{
+  gloves *NikeCricketGloves
+  bat *NikeCricketBat
 }
-func (c *CricketGloves) GetGlovesType() string {
-	return "cricket_Gloves"
+
+func NewNikeCricketFactory( gloves *NikeCricketGloves, bat *NikeCricketBat) *NikeCricketFactory{
+  return &NikeCricketFactory{
+    gloves: gloves,
+    bat: bat,
+  }
 }
+
+
+
+type AdidasCricketBat struct{}
+
+func NewAdidasCricketBat() *AdidasCricketBat{
+  return &AdidasCricketBat{}
+}
+type AdidasCricketGloves struct{}
+func NewAdidasCricketGloves() *AdidasCricketGloves{
+  return &AdidasCricketGloves{}
+}
+func (c *AdidasCricketBat) GetBatType() string {
+	return "adidas_cricket_bat"
+}
+func (c *AdidasCricketGloves) GetGlovesType() string {
+	return "adidas_cricket_Gloves"
+}
+
+type NikeCricketBat struct{}
+func NewNikeCricketBat() *NikeCricketBat{
+  return &NikeCricketBat{}
+}
+type NikeCricketGloves struct{}
+func NewNikeCricketGloves() *NikeCricketGloves{
+  return &NikeCricketGloves{}
+}
+func (c *NikeCricketBat) GetBatType() string {
+  return "nike_cricket_bat"
+}
+func (c *NikeCricketGloves) GetGlovesType() string {
+  return "nike_cricket_Gloves"
+}
+

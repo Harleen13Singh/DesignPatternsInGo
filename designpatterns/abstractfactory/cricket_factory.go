@@ -1,13 +1,13 @@
 package abstractfactory
 
 type CricketFactory struct{
-  bat *CricketBat
-  gloves *CricketGloves
+  adidasFactory *AdidasCricketFactory
+  nikeFactory *NikeCricketFactory
 }
 
-func NewCricketFactory(bat *CricketBat,gloves *CricketGloves) *CricketFactory{
+func NewCricketFactory( adidasFactory *AdidasCricketFactory, nikeFactory *NikeCricketFactory) *CricketFactory{
   return &CricketFactory{
-    bat: bat,
-    gloves: gloves,
+   adidasFactory: adidasFactory,
+    nikeFactory: nikeFactory,
   }
 }

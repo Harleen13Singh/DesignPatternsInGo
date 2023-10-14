@@ -1,5 +1,8 @@
 Problem statement: 
 
-You have to build a sports shop simulator which sells bat and gloves for different types of sports.
+You have to build a sports shop simulator which sells the sports products.
+For simplicity, sports products includes a bat and a pair of gloves 
+
 Client will ask for the products for the given sport and all the logic for the products creation should be abstracted from the client.
-For eg. If client asks for the Cricket products, factory should return cricket bat and cricket gloves only.
+
+For eg. If client asks for the Cricket sports product, factory should return cricket bat and cricket gloves only.
